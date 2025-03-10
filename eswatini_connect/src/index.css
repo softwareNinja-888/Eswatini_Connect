@@ -17,3 +17,8 @@
 body{
   background-color: #000000;
 }
+
+@keyframes marquee {
+  0% {transform:translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
