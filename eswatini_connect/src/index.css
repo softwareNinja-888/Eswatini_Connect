@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import "tailwindcss/preflight"
+@tailwind utilities;
+
+@theme {
+
+  --color-primary: #101211;
+  --color-secondary: #e2c376;
+  --color-cardBg: #171918;
+  --color-otherBlack: rgba(255,255,255,0.08);
+
+  --color-primaryText: #dbdbdb;
+
+}
+
+body{
+  background-color: #000000;
+}

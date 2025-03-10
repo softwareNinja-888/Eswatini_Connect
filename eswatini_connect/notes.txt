@@ -1,0 +1,2 @@
+primary: black
+second: #e2c376;
