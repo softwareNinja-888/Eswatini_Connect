@@ -99,7 +99,7 @@ export function FormFooter() {
                         id="phoneFoot"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="+ (268) 7856 6745"
+                        placeholder="+268 7856 6745"
                         className="w-full px-3 py-2 border border-white rounded focus:outline-none focus:ring-2 focus:ring-yellowCustom focus:border-0"
                     />
                     {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
@@ -116,13 +116,13 @@ export function FormFooter() {
                         {isSubmitting ? (
                             <>
                                 <svg
-                                    className="animate-spin h-5 w-5 text-white"
+                                    className="animate-spin h-5 w-5 text-yellowCustom"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                 >
                                     <circle
-                                        className="opacity-25"
+                                        className="opacity-100"
                                         cx="12"
                                         cy="12"
                                         r="10"
