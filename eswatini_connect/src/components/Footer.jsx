@@ -4,7 +4,7 @@ export function Footer(){
     return (
         <>
 
-            <footer id="footer" className="footer sm:footer-horizontal text-neutral-content pt-44 px-10 bg-black">
+            <footer id="footer" className="footer sm:footer-horizontal text-neutral-content pb-10 pt-44 px-10 bg-black">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Web Development</a>
