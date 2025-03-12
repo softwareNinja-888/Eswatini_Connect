@@ -107,6 +107,7 @@ export function FormFooter() {
 
                     {/* SUBMIT BUTTON */}
                     <button
+                        aria-label="Submit Form"
                         id="submit_form"
                         type="submit"
                         className="w-full mt-3 bg-black border border-yellowCustom text-white text-lg font-bold py-2 font-lora cursor-pointer flex justify-center items-center gap-2 transition duration-500 hover:scale-103 hover:bg-yellowCustom hover:text-black"
