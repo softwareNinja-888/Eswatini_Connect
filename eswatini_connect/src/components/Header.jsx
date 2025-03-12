@@ -11,9 +11,9 @@ export function Header(){
                     <NavLink linkName='Our Services' href="services"/>
                     <NavLink linkName='About Us' href="about"/>
                     <NavLink linkName='Our Work' />
-                    <NavLink linkName='Contact Us' />
+                    <NavLink linkName='Contact Us' href="footer"/>
                 </nav>
-                <div className="cursor-pointer flex border border-yellowCustom  text-gray-300 rounded-lg px-10 py-2 hover:bg-yellowCustom  hover:text-black transition duration-400 ease-in-out bg-cardBg ">Let's Talk</div>
+                <div id="contact_Btn" className="cursor-pointer flex border border-yellowCustom  text-white rounded-lg px-10 py-2 hover:bg-yellowCustom  hover:text-black transition duration-400 ease-in-out bg-cardBg ">Let's Talk</div>
             </div>
         </>
     )
