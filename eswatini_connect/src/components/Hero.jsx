@@ -36,9 +36,9 @@ export function Hero(){
                     </div>
 
                     {/* ADD ACTION AFTER CLICKING BUTTON */}
-                    <div className="group flex justify-center items-center gap-3 border border-secondary py-5 w-72 cursor-pointer hover:bg-secondary hover:text-black transition duration-400 ease-in-out">
+                    <div className="group flex justify-center items-center gap-3 border border-yellowCustom py-5 w-72 cursor-pointer hover:bg-yellowCustom hover:text-black transition duration-400 ease-in-out">
                         <div className="font-bold">Get a Free Consultaion</div>
-                        <FaArrowRight size={24}  className="text-secondary group-hover:text-black"/>
+                        <FaArrowRight size={24}  className="text-yellowCustom group-hover:text-black"/>
                     </div>
                 </motion.div>
 
@@ -49,7 +49,7 @@ export function Hero(){
                 >
                     <img
                         src='/illus/illus8.png'
-                        alt="Faith Illustration"
+                        alt="Illustration"
                         className="max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
                     />
                 </motion.div>
