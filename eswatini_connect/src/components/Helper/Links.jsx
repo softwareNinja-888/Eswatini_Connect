@@ -2,17 +2,6 @@ import { NavLink } from "react-router";
 
 export function Links({linkName,href="#"}){
 
-    // function toUrl(url) {
-    //     const UrlSection = document.getElementById(url);
-
-    //     if (UrlSection === null){
-    //         window.open(url)
-    //     } else{
-    //         UrlSection?.scrollIntoView({ behavior: "smooth" });
-    //     }
-    // };
-
-
     return (
         <>
             <NavLink to={`/${href}`} className={ ({isActive })=> {

@@ -13,6 +13,7 @@ export function Header(){
                     <Links linkName='Our Services' href="services"/>
                     <Links linkName='About Us' href="about"/>
                     <Links linkName='Our Work' href="portfolio" />
+                    <Links linkName='Pricing' href="pricing" />
                     <Links linkName='Contact Us' href="contact"/>
                 </nav>
                 {/* <div id="contact_Btn" className="cursor-pointer flex border border-yellowCustom  text-white rounded-lg px-10 py-2 hover:bg-yellowCustom  hover:text-black transition duration-400 ease-in-out bg-black font-inter700 ">Let's Talk</div> */}

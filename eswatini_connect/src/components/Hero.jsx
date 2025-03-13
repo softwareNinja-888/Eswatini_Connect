@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { GradientText } from "./Helper/GradientTxt";
+import { NavLink } from "react-router";
 import { motion } from "framer-motion";
 
 export function Hero(){
@@ -36,10 +37,10 @@ export function Hero(){
                     </div>
 
                     {/* ADD ACTION AFTER CLICKING BUTTON */}
-                    <div id="free_consultation" className="group flex justify-center items-center gap-3 border border-yellowCustom py-5 w-72 cursor-pointer hover:bg-yellowCustom hover:text-black transition duration-400 ease-in-out">
+                    <NavLink to='/contact' className="group flex justify-center items-center gap-3 border border-yellowCustom py-5 w-72 cursor-pointer hover:bg-yellowCustom hover:text-black transition duration-400 ease-in-out">
                         <div className="font-inter700">Get a Free Consultaion</div>
                         <FaArrowRight size={24}  className="text-yellowCustom group-hover:text-black"/>
-                    </div>
+                    </NavLink>
                 </motion.div>
 
                 {/* Image Content */}
