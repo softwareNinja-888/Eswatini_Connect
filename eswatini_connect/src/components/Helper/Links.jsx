@@ -1,0 +1,23 @@
+import { NavLink } from "react-router";
+
+export function Links({linkName,href="#"}){
+
+    // function toUrl(url) {
+    //     const UrlSection = document.getElementById(url);
+
+    //     if (UrlSection === null){
+    //         window.open(url)
+    //     } else{
+    //         UrlSection?.scrollIntoView({ behavior: "smooth" });
+    //     }
+    // };
+
+
+    return (
+        <>
+            <NavLink to={`/${href}`} className={ ({isActive })=> {
+                console.log("isActive:",href,":",isActive)
+                return `flex gap-1.5 no-underline relative cursor-pointer  after:content-[""] after:absolute after:-bottom-0.5 after:left-0 after:w-full after:h-0.5 after:opacity-0 after:transition-opacity after:duration-700 after:ease-in-out hover:after:opacity-100 hover:after:bg-yellowCustom text-base max-[500px]:text-xs font-inter500 ${isActive ? 'text-yellowCustom scale-110 transition-all duration-500' :'text-white'}`;}}>{linkName}</NavLink>
+        </>
+    )
+}

@@ -14,12 +14,10 @@ function App() {
   return (
     <>
       <div id='#' className="flex flex-col overflow-x-hidden" >
-        <Header/>
         <Hero/>
         <ClientDisplay/>
         <Services/>
         <About/>
-        <Footer/>
         <ScrollToTop/>
         <Whatsapp/>
       </div>

@@ -14,8 +14,8 @@ export function ServiceCard({title='',img='/heroBgM.avif'}) {
 
             {/* Content - Kept Above the Background */}
             <div className="relative z-10 flex flex-col gap-3 text-white w-10/12">
-                <div className="text-xl font-bold">{title}</div>
-                <div className="font-extralight">
+                <div className="text-xl font-inter700">{title}</div>
+                <div className="font-inter400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, corrupti! Totam nisi nihil perferendis.
                 </div>
             </div>

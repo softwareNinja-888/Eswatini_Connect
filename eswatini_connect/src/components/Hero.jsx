@@ -31,13 +31,13 @@ export function Hero(){
 
                 {/* TEXT-CONTENT */}
                 <motion.div variants={itemVariants} className="flex flex-col text-white self-center gap-8 flex-2/3">
-                    <GradientText text='Expert Solutions: Accelerate Digital Success' width="w-full" h="h-28"/>
-                    <div className="text-md font-bold">We craft tailored solutions that connect your business with local audiences and global opportunities. Whether you're a startup or an established brand, let us turn clicks into customers and traffic into revenue.  
+                    <GradientText text='Expert Solutions: Accelerate Digital Success' width="w-full" h="h-20" size="text-4xl"/>
+                    <div className="text-md font-poppins">We craft tailored solutions that connect your business with local audiences and global opportunities. Whether you're a startup or an established brand, let us turn clicks into customers and traffic into revenue.  
                     </div>
 
                     {/* ADD ACTION AFTER CLICKING BUTTON */}
                     <div id="free_consultation" className="group flex justify-center items-center gap-3 border border-yellowCustom py-5 w-72 cursor-pointer hover:bg-yellowCustom hover:text-black transition duration-400 ease-in-out">
-                        <div className="font-bold">Get a Free Consultaion</div>
+                        <div className="font-inter700">Get a Free Consultaion</div>
                         <FaArrowRight size={24}  className="text-yellowCustom group-hover:text-black"/>
                     </div>
                 </motion.div>

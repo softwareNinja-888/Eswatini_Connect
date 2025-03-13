@@ -57,13 +57,15 @@ export function FormFooter() {
     };
 
     return (
-        <div className="w-10/12 lg:w-[420px] m-auto text-white ">
+        <div className="w-10/12 lg:w-[320px] m-auto text-white ">
             {isSubmitted ? (
                 <p className="text-green-500 font-bold text-center">Thanks for reaching out! I’ll get back to you shortly.</p>
             ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
+                <>
+                    <h1 className="text-5xl text-yellowCustom font-inter900 mb-20 ">Contact Us</h1>
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full font-inter300">
                     {/* FIRST NAME */}
-                    <label htmlFor="name" className="block font-inter">
+                    <label htmlFor="name" className="block">
                         Name *
                     </label>
                     <input
@@ -77,7 +79,7 @@ export function FormFooter() {
                     {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
 
                     {/* EMAIL */}
-                    <label htmlFor="emailFoot" className="block font-inter">
+                    <label htmlFor="emailFoot" className="block">
                         Enter your email *
                     </label>
                     <input
@@ -91,7 +93,7 @@ export function FormFooter() {
                     {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
 
                     {/* PHONE */}
-                    <label htmlFor="phoneFoot" className="block font-inter">
+                    <label htmlFor="phoneFoot" className="block">
                         Enter your phone number
                     </label>
                     <input
@@ -110,13 +112,13 @@ export function FormFooter() {
                         aria-label="Submit Form"
                         id="submit_form"
                         type="submit"
-                        className="w-full mt-3 bg-black border border-yellowCustom text-white text-lg font-bold py-2 font-lora cursor-pointer flex justify-center items-center gap-2 transition duration-500 hover:scale-103 hover:bg-yellowCustom hover:text-black"
+                        className="w-full mt-3 bg-yellowCustom border border-yellowCustom text-white text-lg font-bold py-2 font-inter700 cursor-pointer flex justify-center items-center gap-2 transition duration-500 hover:scale-103"
                         disabled={isSubmitting}
                     >
                         {isSubmitting ? (
                             <>
                                 <svg
-                                    className="animate-spin h-5 w-5 text-yellowCustom"
+                                    className="animate-spin h-5 w-5 text-green-500"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -142,6 +144,7 @@ export function FormFooter() {
                         )}
                     </button>
                 </form>
+                </>
             )}
         </div>
     );
