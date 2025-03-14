@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { AnimatedImg } from "./Helper/AnimatedImg";
+import { information } from "../assets/data/data";
 
 export function About(){
+    const companyName = information[0].company_name;
+
     return (
         <>
             <div id='about' className="flex flex-col lg:flex-row lg:px-16 pb-20 gap-[100px] px-5 py-50">
@@ -15,7 +18,7 @@ export function About(){
                         style={{ transform: 'scaleY(0.5)' }}
                     />
                     <div className="flex flex-col mt-4 gap-5 font-inter400">
-                        At Expert Solutions, we help Eswatini businesses succeed online with smart marketing that works. We know the local market inside out and offer website design, SEO, SMS campaigns, PPC ads, content creation, email marketing, and detailed reports to grow your business.
+                        At {companyName}, we help Eswatini businesses succeed online with smart marketing that works. We know the local market inside out and offer website design, SEO, SMS campaigns, PPC ads, content creation, email marketing, and detailed reports to grow your business.
                         <div className="flex flex-col text-md ">
                         <span className="mb-6">
                             What makes us different is our deep understanding of Eswatini consumers combined with our technical skills. We use AI to gather local data that gives you an edge over competitors, creating strategies that connect with your audience and deliver real results.

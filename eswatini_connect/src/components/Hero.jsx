@@ -2,8 +2,12 @@ import { FaArrowRight } from "react-icons/fa";
 import { GradientText } from "./Helper/GradientTxt";
 import { NavLink } from "react-router";
 import { motion } from "framer-motion";
+import { information } from '../assets/data/data';
+
 
 export function Hero(){
+
+    const companyName = information[0].company_name;
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -25,14 +29,15 @@ export function Hero(){
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
     };
-
+    
+    
     return (
         <>
             <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col md:flex-row  gap-16 w-screen not-[]:px-6 md:px-16 py-20">
 
                 {/* TEXT-CONTENT */}
                 <motion.div variants={itemVariants} className="flex flex-col text-white self-center gap-8 flex-2/3">
-                    <GradientText text='Expert Solutions: Accelerate Digital Success' width="w-full" h="h-20" size="text-4xl"/>
+                    <GradientText text={`${companyName}: Accelerate Digital Success`} width="w-full" h="h-20" size="text-4xl"/>
                     <div className="text-md font-poppins">We craft tailored solutions that connect your business with local audiences and global opportunities. Whether you're a startup or an established brand, let us turn clicks into customers and traffic into revenue.  
                     </div>
 
