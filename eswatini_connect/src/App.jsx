@@ -7,6 +7,7 @@ import { Header } from './components/Header'
 import { ScrollToTop } from './components/Helper/ScrollToTop'
 import { Whatsapp } from './components/Helper/Whatsapp'
 import { Hero } from './components/Hero'
+import { Pricing } from './components/Pricing'
 import { Services } from './components/Services'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <ClientDisplay/>
         <Services/>
         <About/>
+        <Pricing/>
         <ScrollToTop/>
         <Whatsapp/>
       </div>
