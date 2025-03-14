@@ -10,6 +10,9 @@ import { Layout } from './components/Layout.jsx'
 import { ContactHome } from './components/Contact/ContactHome.jsx'
 import { PricingHome } from './components/Pricing/PricingHome.jsx'
 import { PorfolioHome } from './components/Portfolio/PortfolioHome.jsx'
+import { ScrollToTop } from './components/Helper/ScrollToTop'
+import { Whatsapp } from './components/Helper/Whatsapp'
+import { FAQ } from './components/FAQ.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,9 +36,13 @@ createRoot(document.getElementById('root')).render(
           <Route path='about'>
             <Route index element={<AboutHome/>}/>
           </Route>
+          <Route path='faq'>
+            <Route index element={<FAQ/>}/>
+          </Route>
         </Route>
-       
       </Routes>
+      <ScrollToTop/>
+      <Whatsapp/>
     </BrowserRouter>
   </StrictMode>,
 )

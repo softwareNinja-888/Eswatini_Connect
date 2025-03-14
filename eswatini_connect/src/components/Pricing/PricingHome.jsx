@@ -5,7 +5,7 @@ import { PriceSm } from './PriceSm';
 export function PricingHome(){
 
     return (
-            <section className="py-10 bg-black sm:py-16 lg:py-24">
+            <section className="py-10 bg-black sm:py-16 lg:py-24 w-10/12 mx-auto">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="max-w-xl mx-auto text-center">
                         <h2 className="text-4xl font-bold text-white lg:text-5xl sm:text-5xl">Pricing &amp; Plans</h2>

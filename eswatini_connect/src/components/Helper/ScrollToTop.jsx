@@ -24,7 +24,7 @@ export function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`cursor-pointer fixed hidden lg:block bottom-5 right-5 p-3 rounded bg-yellowCustom text-white shadow-lg transition-opacity duration-300 ${
+      className={`cursor-pointer fixed hidden lg:block bottom-5 right-5 p-3 rounded bg-yellowCustom text-white shadow-lg transition-opacity duration-300 z-50 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
