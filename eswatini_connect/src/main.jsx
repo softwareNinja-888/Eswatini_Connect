@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter,Route,Routes } from 'react-router'
 import './index.css'
@@ -13,10 +13,13 @@ import { PorfolioHome } from './components/Portfolio/PortfolioHome.jsx'
 import { ScrollToTop } from './components/Helper/ScrollToTop'
 import { Whatsapp } from './components/Helper/Whatsapp'
 import { FAQ } from './components/FAQ.jsx'
+import { PageScrollToTop } from './components/Helper/PageScrollToTop.jsx'
+import { SuccessMsg } from './components/Helper/SuccessMsg.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <PageScrollToTop/>
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<App/>}/>
