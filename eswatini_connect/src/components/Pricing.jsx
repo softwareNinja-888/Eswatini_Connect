@@ -14,9 +14,9 @@ export function Pricing() {
   }) {
     return (
       <>
-        <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div className="relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#1a1a1a] px-8 py-10 shadow-pricing dark:border-dark-3 dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]">
-            <span className="mb-3 block text-lg font-semibold text-yellowCustom">
+        <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
+          <div className={`relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#1a1a1a]  px-8  py-10 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]  ${type === 'Business' ? 'shadow-[-2px_0_6px] transform scale-103 shadow-greenSecond' : null}`}>
+            <span className="mb-3 block text-lg font-semibold text-greenSecond">
               {type}
             </span>
             <h2 className="mb-5 text-[42px] font-bold text-white">
@@ -33,10 +33,12 @@ export function Pricing() {
               href="/#"
               className={` ${
                 active
-                  ? "block w-full rounded-md border  bg-yellowCustom border-yellowCustom p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
-                  : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-yellowCustom border-yellowCustom transition hover:border-yellowCustom hover:bg-yelborder-yellowCustom hover:text-white dark:border-dark-3"
+                  ? "block w-full rounded-md border border-greenFirst bg-greenFirst p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenFirst  hover:scale-102 transition duration-400 ease-in-out font-inter700  "
+                  : "block w-full rounded-md border  bg-inherit border-greenFirst p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenFirst hover:scale-102 transition duration-400 ease-in-out font-inter700"
               } `}
             >
+
+
               {buttonText}
             </a>
             <div>
@@ -60,9 +62,6 @@ export function Pricing() {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span className="mb-2 block text-lg font-semibold text-yellowCustom">
-                Pricing Table
-              </span>
               <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-white sm:text-4xl md:text-[40px]">
                 Our Pricing Plan
               </h2>

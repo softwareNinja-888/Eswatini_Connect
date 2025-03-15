@@ -26,7 +26,7 @@ export function Whatsapp() {
       aria-label="Send us message on whatsapp"
       id="Whatsapp"
       onClick={scrollToTop}
-      className={`cursor-pointer fixed lg:hidden bottom-5 right-5 p-3 rounded bg-white text-green-500 shadow-lg transition-opacity duration-300 ${
+      className={`cursor-pointer fixed lg:hidden bottom-5 right-5 p-3 rounded bg-white text-green-500 shadow-lg transition-opacity duration-300 z-50 ${ 
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >

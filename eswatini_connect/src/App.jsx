@@ -10,6 +10,7 @@ import { Hero2 } from './components/Hero2'
 import { Pricing } from './components/Pricing'
 import { Services } from './components/Services'
 import { Team } from './components/Team'
+import { AboutHome } from './components/About/AboutHome'
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
         <Services/>
         <About/>
         <Pricing/>
+        <AboutHome sectionWidth='w-11/12'/>
         <Team/>
+
       </div>
     </>
   )

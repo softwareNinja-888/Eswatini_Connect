@@ -6,8 +6,8 @@ export function Header(){
     return (
         <>
             <div className="flex justify-between items-center text-white px-10 py-10">
-                <NavLink to='/'>
-                    <img src="https://cdn.prod.website-files.com/6706dece62edde9c8c446cf9/6706dece62edde9c8c446e9b_Enigma%20Studio.svg" alt="logo" className="" />
+                <NavLink to='/' className=''>
+                    <img src="/logo1.svg" alt="logo" className="w-16 h-16" />
                 </NavLink>
                 <nav className="flex text-gray-300 gap-10 ">
                     <Links linkName='Our Services' href="services"/>

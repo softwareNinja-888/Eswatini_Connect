@@ -49,6 +49,7 @@
 
 import React, { useState } from 'react';
 import { information } from '../assets/data/data';
+import { NavLink } from 'react-router';
 
 export function Footer(){        
 
@@ -59,8 +60,9 @@ export function Footer(){
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img className="w-auto h-19" src="https://cdn.prod.website-files.com/6706dece62edde9c8c446cf9/6706dece62edde9c8c446e9b_Enigma%20Studio.svg" alt="logo" />
-
+                        <NavLink to='/' className=''>
+                            <img src="/logo1.svg" alt="logo" className="w-16 h-16" />
+                        </NavLink>
                         <p className="text-base leading-relaxed text-white mt-7">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
 
                         <ul className="flex items-center space-x-3 mt-9">
