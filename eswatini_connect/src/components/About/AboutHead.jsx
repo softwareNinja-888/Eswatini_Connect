@@ -9,7 +9,7 @@ export function AboutHead(){
 
         <>
             <div className="flex flex-col justify-center items-center gap-6 text-white py-20 w-8/12 mx-auto">
-                <div className="text-6xl font-inter700">About <span className="bg-greenPrimary px-1">{companyName}</span></div>
+                <div className="text-6xl font-inter700">About <span className="bg-greenPrimary px-1 text-black italic">{companyName}</span></div>
                 <div className="flex flex-col mt-4 gap-5 font-inter400">
                         At {companyName}, we help Eswatini businesses succeed online with smart marketing that works. We know the local market inside out and offer website design, SEO, SMS campaigns, PPC ads, content creation, email marketing, and detailed reports to grow your business.
                         <div className="flex flex-col text-md ">

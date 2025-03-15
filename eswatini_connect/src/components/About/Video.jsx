@@ -41,11 +41,11 @@ export function Video() {
                 />
               </div>
               <div
-                className={`absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center`}
+                className={`absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center `}
               >
                 <a
                   onClick={() => setvideoOpen(true)}
-                  className="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary dark:bg-dark-2 dark:text-white md:h-[100px] md:w-[100px]"
+                  className="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary dark:bg-dark-2 dark:text-white md:h-[100px] md:w-[100px] cursor-pointer"
                 >
                   <span className="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white bg-opacity-20 delay-300 duration-1000"></span>
                   <svg
@@ -428,7 +428,7 @@ export function Video() {
             <>
               <iframe
                 className="h-[320px] w-full"
-                src="https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1&mute=1"
+                src="https://www.youtube.com/embed/baZYvsa1GUA?autoplay=1&mute=1"
               />
             </>
           </div>

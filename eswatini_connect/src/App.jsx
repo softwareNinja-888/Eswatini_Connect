@@ -11,6 +11,7 @@ import { Pricing } from './components/Pricing'
 import { Services } from './components/Services'
 import { Team } from './components/Team'
 import { WhyUs } from './components/About/WhyUs'
+import { Video } from './components/About/Video'
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
       <div id='#' className="flex flex-col overflow-x-hidden" >
         <Hero/>
         <ClientDisplay/>
+        <div className="py-50">
+          <Video/>
+        </div>
         <Services/>
         <About/>
         <Pricing/>

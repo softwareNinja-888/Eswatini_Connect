@@ -12,7 +12,7 @@ export function Services(){
 
   return(
     <>
-      <div id='services' className="flex flex-col lg:flex-row lg:px-16 pb-20 gap-[150px] px-2 py-50">
+      <div id='services' className="flex flex-col lg:flex-row lg:px-16 pb-40 gap-[150px] px-2 ">
           <div className="flex flex-col w-full lg:w-1/2 text-white">
               <div className="flex items-center gap-5 ">
                   <p className="text-3xl text-greenPrimary font-inter600">{`#1.`}</p>

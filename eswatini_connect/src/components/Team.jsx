@@ -2,6 +2,13 @@
 
 import { TeamLine } from "./Helper/TeamLine";
 
+import designer from '/designer.webp'
+import designer1 from '/designer1.webp'
+import designer2 from '/uxDesigner.avif'
+import designer3 from '/sophie.webp'
+import { TeamCard } from "./Helper/TeamCard";
+
+
 export function Team(){        
     return (
         <section className="py-12 bg-black sm:py-16 lg:py-40 lg:mb-44">
@@ -10,30 +17,11 @@ export function Team(){
                     <h2 className="text-3xl font-bold text-greenPrimary font-inter600 sm:text-4xl xl:text-5xl font-pj">Meet Our Team</h2>
                 </div>
 
-                <div className="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
-                    <div>
-                        <img className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-1.png" alt="" />
-                        <p className="mt-5 text-lg font-bold text-white sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                        <p className="mt-2 text-base font-normal text-white font-pj">Co founder, Chairman, Executive Director</p>
-                    </div>
-
-                    <div>
-                        <img className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png" alt="" />
-                        <p className="mt-5 text-lg font-bold text-white sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                        <p className="mt-2 text-base font-normal text-white">Co founder, Chairman, Executive Director</p>
-                    </div>
-
-                    <div>
-                        <img className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png" alt="" />
-                        <p className="mt-5 text-lg font-bold text-white sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                        <p className="mt-2 text-base font-normal text-white">Co founder, Chairman, Executive Director</p>
-                    </div>
-
-                    <div>
-                        <img className="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png" alt="" />
-                        <p className="mt-5 text-lg font-bold text-white sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                        <p className="mt-2 text-base font-normal text-white font-pj">Co founder, Chairman, Executive Director</p>
-                    </div>
+                <div className="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20 mb-30">
+                    <TeamCard img={designer} name='John Doe' position='UX/UI Designer'/> 
+                    <TeamCard img={designer1} name='Jane Doe' position='Frontend Developer'/> 
+                    <TeamCard img={designer2} name='Ron Doe' position='Backend Developer'/> 
+                    <TeamCard img={designer3} name='Alex Doe' position='Sales Director'/> 
                 </div>
 
                 <div className="mt-12 sm:mt-16">
