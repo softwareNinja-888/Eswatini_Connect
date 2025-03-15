@@ -16,7 +16,7 @@ export function Pricing() {
       <>
         <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
           <div className={`relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#1a1a1a]  px-8  py-10 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]  ${type === 'Business' ? 'shadow-[-1px_0_6px] transform scale-103 shadow-greenPrimary' : null}`}>
-            <span className="mb-3 block text-lg font-semibold text-greenPrimary">
+            <span className="mb-3 block text-lg font-semibold text-greenSecondary">
               {type}
             </span>
             <h2 className="mb-5 text-[42px] font-bold text-white">
