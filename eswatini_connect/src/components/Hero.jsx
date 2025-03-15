@@ -42,13 +42,13 @@ export function Hero(){
                     </div>
 
                     {/* ADD ACTION AFTER CLICKING BUTTON */}
-                    <NavLink to='/contact' className="group flex justify-center items-center gap-3 border border-greenPrimary py-5 w-72 cursor-pointer hover:bg-yellowCustom hover:text-black transition duration-400 ease-in-out">
+                    <NavLink to='/contact' className="group flex justify-center items-center gap-3 border border-greenPrimary py-5 w-72 cursor-pointer hover:bg-greenPrimary hover:text-black transition duration-400 ease-in-out">
                         <div className="font-inter700">Get a Free Consultaion</div>
                         <FaArrowRight size={24}  className="text-greenPrimary group-hover:text-black"/>
                     </NavLink>
                 </motion.div>
 
-                {/* Image Content */}
+                {/* Image Content */}yellowCustom
                 <motion.div
                 variants={imageVariants}
                 className="w-full md:w-1/2 justify-center hidden lg:block "

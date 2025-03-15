@@ -15,8 +15,8 @@ export function Pricing() {
     return (
       <>
         <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
-          <div className={`relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#1a1a1a]  px-8  py-10 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]  ${type === 'Business' ? 'shadow-[-2px_0_6px] transform scale-103 shadow-greenSecond' : null}`}>
-            <span className="mb-3 block text-lg font-semibold text-greenSecond">
+          <div className={`relative z-10 mb-10 overflow-hidden rounded-[10px] border-2 border-stroke bg-[#1a1a1a]  px-8  py-10 sm:p-12 lg:px-6 lg:py-10 xl:p-[50px]  ${type === 'Business' ? 'shadow-[-1px_0_6px] transform scale-103 shadow-greenPrimary' : null}`}>
+            <span className="mb-3 block text-lg font-semibold text-greenPrimary">
               {type}
             </span>
             <h2 className="mb-5 text-[42px] font-bold text-white">
@@ -33,8 +33,8 @@ export function Pricing() {
               href="/#"
               className={` ${
                 active
-                  ? "block w-full rounded-md border border-greenFirst bg-greenFirst p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenFirst  hover:scale-102 transition duration-400 ease-in-out font-inter700  "
-                  : "block w-full rounded-md border  bg-inherit border-greenFirst p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenFirst hover:scale-102 transition duration-400 ease-in-out font-inter700"
+                  ? "block w-full rounded-md border border-greenPrimary bg-greenPrimary p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenPrimary  hover:scale-102 transition duration-400 ease-in-out font-inter700  "
+                  : "block w-full rounded-md border  bg-inherit border-greenPrimary p-3 text-center text-base font-medium text-white cursor-pointer hover:bg-greenPrimary hover:scale-102 transition duration-400 ease-in-out font-inter700"
               } `}
             >
 

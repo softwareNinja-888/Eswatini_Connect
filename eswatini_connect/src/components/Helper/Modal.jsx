@@ -12,7 +12,7 @@ export function FormModal(){
         <>
             {/* <button className="btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>open modal</button> */}
 
-            <div id="contact_Btn" className="cursor-pointer flex border border-greenPrimary  text-white rounded-lg px-10 py-2 hover:bg-greenPrimary  hover:text-black transition duration-400 ease-in-out bg-black font-inter700 " onClick={()=>document.getElementById('my_modal_2').showModal()}>Let's Talk</div>
+            <div id="contact_Btn" className="cursor-pointer flex border border-greenPrimary  text-white px-10 py-2 hover:bg-greenPrimary  hover:text-black transition duration-400 ease-in-out bg-black font-inter700 " onClick={()=>document.getElementById('my_modal_2').showModal()}>Let's Talk</div>
 
             <dialog id="my_modal_2" className="modal">
             <div className="flex flex-col justify-center items-center  modal-box text-black bg-white">

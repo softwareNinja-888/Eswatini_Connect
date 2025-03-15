@@ -15,11 +15,11 @@ export function Services(){
       <div id='services' className="flex flex-col lg:flex-row lg:px-16 pb-20 gap-[150px] px-2 py-50">
           <div className="flex flex-col w-full lg:w-1/2 text-white">
               <div className="flex items-center gap-5 ">
-                  <p className="text-3xl text-yellowCustom font-inter600">{`#1.`}</p>
+                  <p className="text-3xl text-greenPrimary font-inter600">{`#1.`}</p>
                   <p className="text-3xl font-inter600">Our Services</p>
               </div>
               <hr
-                  className="w-12/12 h-2 self-center  my-4 text-yellowCustom  bg-yellowCustom "
+                  className="w-12/12 h-2 self-center  my-4 text-greenPrimary  bg-greenPrimary "
                   style={{ transform: 'scaleY(0.5)' }}
               />
               <div className="flex flex-col mt-4 gap-5 font-inter400">
