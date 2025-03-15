@@ -180,14 +180,14 @@ export function Footer(){
                                 <textarea name="message" id="message" placeholder='Your Message' className='block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600 resize-none h-44'></textarea>
                             </div>
 
-                            <button type="button" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 cursor-pointer hover:scale-102" onClick={()=>{setIsVisible(true)}}>Subscribe</button>
+                            <button type="button" className="inline-flex items-center justify-center px-6 py-4 mt-3 font-inter700 text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 cursor-pointer hover:scale-102" onClick={()=>{setIsVisible(true)}}>Subscribe</button>
                         </form>
                     </div>
                 </div>
 
                 <hr className="mt-16 mb-10 border-gray-200" />
 
-                <p className="text-sm text-center text-white">© Copyright 2021, All Rights Reserved by {companyName}</p>
+                <p className="text-sm text-center text-white font-extralight">© Copyright 2021, All Rights Reserved by {companyName}</p>
             </div>
         </section>
 

@@ -48,7 +48,7 @@ export function Hero(){
                     </NavLink>
                 </motion.div>
 
-                {/* Image Content */}yellowCustom
+                {/* Image Content */}
                 <motion.div
                 variants={imageVariants}
                 className="w-full md:w-1/2 justify-center hidden lg:block "
