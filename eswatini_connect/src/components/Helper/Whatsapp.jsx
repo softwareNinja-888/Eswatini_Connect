@@ -27,7 +27,7 @@ export function Whatsapp() {
       id="Whatsapp"
       onClick={scrollToTop}
       className={`cursor-pointer fixed lg:hidden bottom-5 right-5 p-3 rounded bg-white text-green-500 shadow-lg transition-opacity duration-300 z-50 ${ 
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible ? "opacity-100" : "opacity-0 hidden"
       }`}
     >
       <FaWhatsapp size={26} />

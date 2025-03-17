@@ -1,2 +1,103 @@
-primary: black
-second: #e2c376;
+const config = {
+  botName: "BayandaBot",
+  initialMessages: [{ type: "text", id: 1, message: "Hi there! How can I help you today?" }],
+};
+
+export default config;
+
+
+messengar.js
+
+class MessageParser {
+  constructor(actionProvider) {
+    this.actionProvider = actionProvider;
+  }
+
+  parse(message) {
+    const lowerCaseMessage = message.toLowerCase();
+
+    if (lowerCaseMessage.includes("hello")) {
+      this.actionProvider.greet();
+    } else {
+      this.actionProvider.defaultResponse();
+    }
+  }
+}
+
+export default MessageParser;
+
+
+action://///////////////
+
+
+class ActionProvider {
+  constructor(createChatBotMessage, setStateFunc) {
+    this.createChatBotMessage = createChatBotMessage;
+    this.setState = setStateFunc;
+  }
+
+  greet() {
+    const message = this.createChatBotMessage("Hello! How can I assist you?");
+    this.updateChatbotState(message);
+  }
+
+  defaultResponse() {
+    const message = this.createChatBotMessage("Sorry, I didn't understand that. Can you rephrase?");
+    this.updateChatbotState(message);
+  }
+
+  updateChatbotState(message) {
+    this.setState(prevState => ({
+      ...prevState,
+      messages: [...prevState.messages, message],
+    }));
+  }
+}
+
+export default ActionProvider;
+
+
+
+component://////////////////
+
+import React from "react";
+import Chatbot from "react-chatbot-kit";
+import "react-chatbot-kit/build/main.css";
+import config from "../chatbot/config";
+import MessageParser from "../chatbot/MessageParser";
+import ActionProvider from "../chatbot/ActionProvider";
+
+const ChatbotComponent = () => {
+  return (
+    <div className="fixed bottom-5 right-5 bg-white shadow-lg p-2 rounded-lg">
+      <Chatbot config={config} messageParser={MessageParser} actionProvider={ActionProvider} />
+    </div>
+  );
+};
+
+export default ChatbotComponent;
+
+
+stlyed:
+
+import React, { useState } from "react";
+import ChatbotComponent from "./Chatbot";
+import { MessageCircle } from "lucide-react";
+
+const ChatbotButton = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="fixed bottom-5 right-5">
+      {isOpen && <ChatbotComponent />}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
+      >
+        <MessageCircle size={24} />
+      </button>
+    </div>
+  );
+};
+
+export default ChatbotButton;

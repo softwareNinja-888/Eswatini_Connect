@@ -15,6 +15,8 @@ import { Whatsapp } from './components/Helper/Whatsapp'
 import { FAQ } from './components/FAQ.jsx'
 import { PageScrollToTop } from './components/Helper/PageScrollToTop.jsx'
 import { SuccessMsg } from './components/Helper/SuccessMsg.jsx'
+import { Error } from './components/Error.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -41,6 +43,9 @@ createRoot(document.getElementById('root')).render(
           </Route>
           <Route path='faq'>
             <Route index element={<FAQ/>}/>
+          </Route>
+           <Route path='error'>
+            <Route index element={<Error/>}/>
           </Route>
         </Route>
       </Routes>

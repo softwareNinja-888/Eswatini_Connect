@@ -25,7 +25,7 @@ export function ScrollToTop() {
     <button
       onClick={scrollToTop}
       className={`cursor-pointer fixed hidden lg:block bottom-5 right-5 p-3 rounded bg-greenSecondary text-white shadow-lg transition-opacity duration-300 z-50 ${
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible ? "opacity-100" : "opacity-0 lg:hidden"
       }`}
     >
       <FaArrowUp size={26} />

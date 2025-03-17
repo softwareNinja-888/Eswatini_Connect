@@ -12,12 +12,16 @@ import { Services } from './components/Services'
 import { Team } from './components/Team'
 import { WhyUs } from './components/About/WhyUs'
 import { Video } from './components/About/Video'
+import ChatbotComponent from './components/ChatBot'
+import { ChatbotButton } from './components/ChatBotBtn'
 
 function App() {
 
   return (
     <>
       <div id='#' className="flex flex-col overflow-x-hidden" >
+        {/* <ChatbotComponent/> */}
+        <ChatbotButton/>
         <Hero/>
         <ClientDisplay/>
         <div className="py-50">

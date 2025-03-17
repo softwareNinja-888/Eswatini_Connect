@@ -54,7 +54,8 @@ export function Hero(){
                 className="w-full md:w-1/2 justify-center hidden lg:block "
                 >
                     <img
-                        src='/illus/illus8.png'
+                        // src='/illus/illus8.png'
+                        src='/new/hero.jpg'
                         alt="Illustration"
                         className="max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
                     />

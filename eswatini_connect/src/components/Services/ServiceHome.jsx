@@ -1,4 +1,5 @@
 import React from "react";
+import {ServiceImg} from './helper/ServiceImg'
 
 
 export function ServiceHome(){
@@ -22,7 +23,7 @@ export function ServiceHome(){
       };
 
   return (
-    <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section className="pb-12 pt-20  bg-black lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -41,7 +42,11 @@ export function ServiceHome(){
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap">
+        <div className="">
+          <ServiceImg img='/imgs/office.avif'/>
+        </div>
+
+        {/*<div className="-mx-4 flex flex-wrap">
           <ServiceCard
             title="Refreshing Design"
             details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
@@ -172,7 +177,7 @@ export function ServiceHome(){
               </svg>
             }
           />
-        </div>
+        </div>*/}
       </div>
     </section>
   );
