@@ -21,7 +21,7 @@ function App() {
     <>
       <div id='#' className="flex flex-col overflow-x-hidden" >
         {/* <ChatbotComponent/> */}
-        <ChatbotButton/>
+        {/* <ChatbotButton/> */}
         <Hero/>
         <ClientDisplay/>
         <div className="py-50">
